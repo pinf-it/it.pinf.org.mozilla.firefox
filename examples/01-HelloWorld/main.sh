@@ -8,6 +8,7 @@ depend {
 }
 
 
+echo "TEST_MATCH_IGNORE>>>"
 CALL_firefox run {
     "homepage": "/",
     "routes": {
@@ -28,6 +29,7 @@ CALL_firefox run {
         }
     }
 }
+echo "<<<TEST_MATCH_IGNORE"
 
 
 echo "OK"

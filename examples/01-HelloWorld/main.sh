@@ -9,6 +9,16 @@ depend {
 
 
 echo "TEST_MATCH_IGNORE>>>"
+
+if [ ! -z "$CI" ]; then
+
+    echo "Start Xvfb display."
+
+    Xvfb :19 -screen 0 1024x768x16 &
+    export DISPLAY=:19
+fi
+
+
 CALL_firefox run {
     "homepage": "/",
     "routes": {

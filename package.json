@@ -7,7 +7,7 @@
     "codeblock": "^0.2.8",
     "connect": "^3.6.0",
     "fs-extra": "^2.1.2",
-    "smi.cli": "^0.35.10"
+    "smi.cli": "^1.0.1"
   },
   "scripts": {
     "test": "BO_ROOT_SCRIPT_PATH=$(pwd)/node_modules/bash.origin/bash.origin bash.origin.test examples"

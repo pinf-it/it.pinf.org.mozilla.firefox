@@ -1,5 +1,5 @@
 
-**Status: DEV** (need to fix running of firefox on linux)
+**Status: DEV** (need to fix running of firefox on circleci)
 
 it.pinf.org.mozilla.firefox
 ===========================

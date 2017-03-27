@@ -10,14 +10,18 @@ depend {
 
 echo "TEST_MATCH_IGNORE>>>"
 
-if [ ! -z "$CI" ]; then
+#if [ ! -z "$CI" ]; then
+    #echo "Start Xvfb display"
+    # @see https://github.com/electron/electron/blob/master/docs/tutorial/testing-on-headless-ci.md
+    # @see https://circleci.com/docs/1.0/browser-debugging/
+    # http://unix.stackexchange.com/questions/9107/how-can-i-run-firefox-on-linux-headlessly-i-e-without-requiring-libgtk-x11-2-0
 
-    echo "Start Xvfb display."
+    #Xvfb :19 -screen 0 1024x768x16 &
+    #export DISPLAY=:19
 
-    Xvfb :19 -screen 0 1024x768x16 &
-    export DISPLAY=:19
-fi
-
+    # TODO: This NodeJS server is not queryable for some reason when running on Circle CI.
+    #       Fix this for Circle CI.
+#fi
 
 CALL_firefox run {
     "homepage": "/",

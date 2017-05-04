@@ -1,6 +1,6 @@
 {
     "name": "it.pinf.org.mozilla.firefox",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "dependencies": {
         "bash.origin.test": "^0.1.28",
         "bluebird": "^3.5.0",
